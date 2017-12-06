@@ -6,7 +6,6 @@ body{
 	background-color: #f4f4f4;
 }
 
-
 /* Global Variables */
 .container {
 	width: 80%;
@@ -37,6 +36,20 @@ ul {
 	margin-bottom: 10px;
 }
 
+.sm {
+	height: 80px;
+	width: 70px;
+	color: #ffffff;
+	background-color: #2E4053;
+	font-size: 65px;
+	cursor: pointer;
+	border: none;
+}
+
+.sm:hover {
+	background-color: #ffffff;
+	color: #2E4053;
+}
 
 
 /* Header Bar */
@@ -195,6 +208,13 @@ footer {
 	margin-top: 20px;
 	color: #ffffff;
 	background-color:#3295D6;
+	text-align: center;
+}
+
+.div1 {
+	color: #ffffff;
+	height: 50%;
+	width: 100%;
 	text-align: center;
 }
 
