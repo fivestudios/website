@@ -173,6 +173,14 @@ img {
 	background-color: #7EA4CB
 }
 
+#main-footer a, #main-footer a:hover, #main-footer a:visited{
+	font-size: 50px;
+	text-decoration: none;
+	color:#fff;
+	border-bottom: 3px solid #7EA4CB;
+	padding-bottom: 3px;
+}
+
 /* Page */
 #page {
 	margin-botton:40px;
