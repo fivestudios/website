@@ -6,10 +6,12 @@
 	// Check for Submit
 	if(filter_has_var(INPUT_POST, "submit")){
 		// Get Form Data
+		$name = htmlspecialchars($_POST["name"]);
 		$email = htmlspecialchars($_POST["email"]);
+		$message = htmlspecialchars($_POST["message"]);
 
-		//Check the required fields
-		if(!empty($email)) {
+		//Check the required fields 
+		if(!empty($email) && !empty($name) && !empty($message)) {
 			// Check Email
 			if(filter_var($email, FILTER_VALIDATE_EMAIL) == false){
 				//Failed
@@ -18,9 +20,11 @@
 				//Passed
 				// Recipient Email
 				$toEmail = "bartekgodzwon@gmail.com";
-				$subject = "Newsletter Sign-Up".": ".$email;
-				$body = "<h2>Newsletter Sign-Up Request</h2>
+				$subject = "Contact Request From".": ".$name;
+				$body = "<h2>Contact Request</h2>
+				<h4>Name</h4><p>".$name."</p>
 				<h4>Email</h4><p>".$email."</p>
+				<h4>Message</h4><p>".$message."</p>
 				";
 
 				//Email Header 
@@ -28,7 +32,7 @@
 				$headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
 				// Additional Headers
-				$headers .= "From: "."<".$email.">"."\r\n";
+				$headers .= "From: " .$name. "<".$email.">". "\r\n";
 
 				if(mail($toEmail, $subject, $body, $headers)) {
 					//Email Sent
@@ -36,10 +40,11 @@
 				} else {
 					//Failed 
 					$msg = "Your email was not sent";
-				}
+					$msgClass = "alert-danger";				}
 			}
 		} else {
-			$msg = "Please fill in the fields";
+			$msg = "Please fill in all fields";
+			$msgClass = "alert-danger";
 		}
 	}
 ?>
@@ -108,72 +113,39 @@
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h2><span class="primary-text">Get</span> In Touch</h2>
-					<p>Please use this form to contact us!</p>
-					<form>
-						<div>
-							<label for="name">Name</label><br>
-							<input type="text" name="name">
+					<?php if($msg!= ""): ?>
+						<div class = "alert <?php echo $msgClass; ?>"><?php echo $msg; ?>
 						</div>
+					<?php endif; ?>
 
-						<div>
-							<label for="email">Email</label><br>
-							<input type="text" name="email">
-						</div>
-
-						<div>
-							<label for="message">Message</label><br>
-							<textarea name="message"></textarea>
-						</div>
-
-						<button type="submit" name="button">Submit</button>
-
-					</form>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<!-- COMPANY --> 
-	<section id="company">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center-xs">
-					<h4>Contact Us</h4>
-					<ul>
-						<li><i class="fa fa-envelope"</i> <a href="mailto:corey@fivestudios.ca?Subject=Website%20Connection" style="color: white"; target="_top"> corey@fivestudios.ca</a></i></li>
-						<li><i class="fa fa-envelope"</i> <a href="mailto:bartekgodzwon@gmail.com?Subject=Website%20Connection" style="color: white"; target="_top"> bartekgodzwon@gmail.com</a></i></li>
-						<li><i class="fa fa-map"</i> Greater Toronto Area</i></li>
-					</ul>
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center-xs">
-					<h4>Donate Bitcoin?</h4>
-					<ul>
-						<li><i class="fa fa-btc"></i> 32mmQvUr6CXPNj6SppcTcqYMtmjd96tfA4</li>
-					</ul>
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 center-xs">
-
-					<h4>Newsletter</h4>
-					<p>We're just getting started. Be the first to hear about our upcoming projects.</p>
 
 					<form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-
-						<input type="text" name="email" placeholder="Enter Email" 
-						value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
-
+						<div class = "form-group">
+							<label>Name</label><br>
+							<input type="text" name="name" class="form-control" 
+							value="<?php echo isset($_POST["name"]) ? $name : ""; ?>">
+						</div>
+						<div class = "form-group">
+							<label>Email</label><br>
+							<input type="text" name="email" class="form-control" 
+							value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
+						</div>
+						<div class = "form-group">
+							<label>Message</label><br>
+							<textarea name="message" class="form-control">
+							<?php echo isset($_POST["message"]) ? $message : ""; ?>
+							</textarea>
+						</div>
 						<br>
-
-						<button type="submit" name="submit">Submit</button>
+						<button type="submit" name="submit" class="btn btn-primary">Submit
+						</button><br>
 					</form>
-					
 				</div>
 			</div>
 		</div>
+
 	</section>
+
 
 
 	<!-- FOOTER --> 

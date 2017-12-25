@@ -110,7 +110,7 @@
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h2><span class="primary-text">See</span> We We Offer</h2>
+					<h2><span class="primary-text">See</span> What We Offer</h2>
 					<ul>
 						<li>
 							<h3>Web Design & Development</h3>
