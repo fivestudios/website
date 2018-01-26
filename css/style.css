@@ -1,16 +1,36 @@
 @charset "utf-8";
 
+
 body{
-	font-family:"Open-sans", sans-serif;
-	font-size: 17px;
-	line-height: 1.5em;
-	margin:0;
-	padding:0;
+	margin-top:70px;
+	font-size: 16px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: Poppins;
+	text-align: center;
+}
+
+p{
+	font-family: Roboto;
+}
 
 img {
 	width:100%;
+}
+
+
+.navbar-default{
+	background: #fff;
+	border:0;
+	font-family: Poppins;
+	text-align: center;
+}
+
+.navbar-brand {
+	font-size:20px;
+	color:#000 !important;
+	font-weight:bold;
 }
 
 .container {
@@ -21,6 +41,13 @@ img {
 
 .primary-text{
 	color:#7EA4CB;
+	font-family: Poppins;
+}
+
+.primary-text2{
+	color:#000;
+	font-family: Poppins;
+	font-weight:bold;
 }
 
 .primary-background{
@@ -38,57 +65,66 @@ img {
 	text-transform: uppercase;
 }
 
+
 #navbar li{
 	display:inline;
 	padding-right:20px;
 	list-style:none;
 }
 
+#navbar ul{
+	text-transform: uppercase;
+}
 
-#navbar a{
+#navbar a, #navbar button {
 	text-decoration: none;
 	color:#888;
 }
 
+#navbar ul.dropdown-menu a {
+	background: none;
+}
+
+
 #navbar li.current a, #navbar a:hover{
 	color:#7EA4CB;
-	border-bottom: 3px solid #7EA4CB;
 	padding-bottom: 3px;
 }
+
 
 /* Showcase */
 
 #showcase{
-	background:url('../images/showcase2.jpg') no-repeat center center;
+	margin-top: 50px;
+	background:url('../images/showcase3.jpeg') no-repeat center center;
 	border-bottom: 1px solid #7EA4CB;
 	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
 }
 
 #showcase .row{
-	height: 600px;
+	height: 1000px;
 }
 
 #showcase h1{
-	font-size: 40px;
-	margin:0;
-	padding-bottom: 20px;
-}
-
-#showcase p{
-	color:#ccc;
+	font-size: 50px;
 	margin:0;
 }
 
 #showcase .showcase-content{
-	background: #333;
+	margin-top: 350px;
 	color: #fff;
-	border-radius: 90px;
-	padding: 40px;
-	opacity: 0.9;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
 }
 
-
 /* Features */
+#features {
+	text-align: center;
+}
 #features h2{
 	font-size: 35px;
 	margin: 0;
@@ -103,19 +139,27 @@ img {
 
 #features .fa{
 	font-size: 60px;
-	color:56a79a;
+	color:56a79a;	
 }
 
 /* Info */
 #info{
-	background:#333 url('../images/info-bg.jpg') no-repeat;
+	background:#333 url('../images/info-bg2.jpeg') no-repeat center center;
 	color:#fff;
+	text-align: center;
+	font-family: Poppins;
+	background-size: cover;
+}
+
+#info .row{
+	height: 200px;
 }
 
 #info h2 {
 	font-size: 35px;
 	margin: 0;
-	padding-bottom: 10px;
+	padding-bottom: 50px;
+	padding-top: 30px;
 }
 
 #info ul {
@@ -129,18 +173,88 @@ img {
 	font-size: 20px;
 }
 
+/* Web Apps section */
+#apps{
+	background:#333 url('../images/code.png') no-repeat center center;
+	color:#fff;
+	text-align: center;
+	font-family: Poppins;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#apps .row{
+	height: 700px;
+}
+
+#apps h2 {
+	font-size: 35px;
+	margin: 0;
+	padding-bottom: 50px;
+	padding-top: 240px;
+}
+
+#apps ul {
+	list-style: none;
+	padding: 0;
+
+}
+
+#apps li {
+	line-height: 2em;
+	font-size: 20px;
+}
+
+/* App Dev */
+#appdev{
+	background:#333 url('../images/app.jpg') no-repeat center center;
+	color:#fff;
+	text-align: center;
+	font-family: Poppins;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#appdev .row{
+	height: 400px;
+}
+
+
+#appdev h2{
+	font-size: 35px;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top:180px;
+}
+
+#appdev p{
+	color:#fff;
+	margin:0;
+	margin-bottom: 40px;
+	line-height: 2em;
+	font-size: 20px;
+}
+
+#appdev .fa{
+	font-size: 60px;
+	color:56a79a;	
+}
+
 
 
 /* Company */
 #company {
-	background: #333;
-	color:#fff;
+	background: #303233;
+	color:#DADCDD;
 	padding:10px 0;
+	text-align: center;
 }
 
 #company h4 {
-	text-transform: uppercase;
-	margin-bottom: 0;	
+	margin-bottom: 0;
+	text-align: center;
+	font-weight:bold;
+	padding-bottom: 10px;
 }
 
 #company ul {
@@ -149,9 +263,19 @@ img {
 	line-height: 2em;
 }
 
+#company a {
+	font-size: 10px;
+}
+
+#company li {
+	font-size: 10px !important;
+}
+
 #company input[type=text]{
 	padding: 7px;
+	color:black;
 }
+
 #company button {
 	background: #222;
 	color:#fff;
@@ -159,22 +283,48 @@ img {
 	border: 0;
 }
 
+#company .navbar-brand{
+	font-size:20px;
+	color:#fff !important;
+	font-weight:bold;
+	text-align: center !important;
+}
+
+#company a, #company a:hover, #company a:visited{
+	font-size: 30px;
+	text-decoration: none;
+	color:#fff;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+#company .sitemap a {
+	font-size: 13px;
+}
+
 /* Footer */
 
 #main-footer{
 	background: #7EA4CB;
 	color:#fff;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 #main-footer button{
 	font-size: 30px;
 	color:#fff;
-	background-color: #7EA4CB
+	background-color: #7EA4CB;
+} 
+
+#main-footer p {
+	padding-top: 10px;
+	font-size: 15px;
 }
 
 #main-footer a, #main-footer a:hover, #main-footer a:visited{
-	font-size: 50px;
+	font-size: 30px;
 	text-decoration: none;
 	color:#fff;
 	border-bottom: 3px solid #7EA4CB;
@@ -183,66 +333,141 @@ img {
 
 /* Page */
 #page {
-	margin-botton:40px;
+	margin-bottom:40px;
+	text-align: center;
 }
 
-#page .boxl {
-	float:left;
-	margin-left: 80px;
+#page .box {
 	width: 40%;
 	padding: 10px;
+	padding-bottom: 30px;
 	text-align: center;
 	background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
-#page .boxr {
-	float:right;
-	margin-right: 80px;
-	width: 40%;
-	padding: 10px;
-	text-align: center;
-	background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#page img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Services */
+#pageProcess {
+	margin-bottom:20px !important;
+}
+/* Web Development */
+
 .services ul li {
 	list-style: none;
 	padding:10px;
 }
 
 .services ul li:nth-child(odd){
-	background: #333;
-	color:#fff;
+	background: #fff;
+	color:#000;
 }
 
 .services ul li:nth-child(even){
-	background: #7EA4CB;
+	background: #fff;
+	color:#7EA4CB;
+}
+
+.services h2 {
+	text-align: left;
+}
+
+.services p {
+	text-align: left;
+}
+
+.approach h2 {
+	padding-top: 10px
+}
+
+.typography{
+	background:url('../images/typography.jpeg') no-repeat center center;
+	margin-top:30px;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
 	color:#fff;
+}
+
+.colours{
+	background:url('../images/colour.jpeg') no-repeat center center;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
+	color:#fff;
+}
+.spacing{
+	background:url('../images/spacing.jpeg') no-repeat center center;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
+	color:#fff;
+}
+.consistency{
+	background:url('../images/consistency.jpeg') no-repeat center center;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
+	color:#fff;
+}
+.imagery{
+	background:url('../images/imagery.jpeg') no-repeat center center;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
+	color:#fff;
+}
+.mobile-compatibility{
+	background:url('../images/mobile-compatibility.jpeg') no-repeat center center;
+	border: 1px solid #7EA4CB;
+	background-size: cover;
+	opacity: 0.8;
+	height: 320px;
+	color:#fff;
+}
+
+.typography h2, .typography h4, .spacing h2, .spacing h4, .imagery h2, .imagery h4 {
+	text-align: right;
+	padding-right: 30px;
+	padding-left: 90px;
+}
+
+.colours h2, .colours h4, .consistency h2, .consistency h4, .mobile-compatibility h2, .mobile-compatibility h4 {
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 90px;
 }
 
 
 /* Contact */
 #contact form{
-	background: #333;
+	background: #303233;
 	color: #fff;
 	padding: 20px;
 }
 
 .contact form input[type="text"]{
-	width: 50%;
+	width: 100%;
 	height: 30px;
 	margin-bottom: 10px;
 }
 
 .contact form textarea{
-	width: 50%;
+	width: 100%;
 	height: 100px;
 }
 
 .contact form button{
-	width: 50%;
+	width: 100%;
 	padding: 10px 0;
 	border: 0;
 	background: #222;
@@ -253,11 +478,163 @@ img {
 	text-transform: uppercase;
 }
 
+/* About Page CSS */
 
-/* Media Queriers */
+#subheader {
+	padding-top: 50px;
+}
+
+#page a, #page a:hover, #page a:visited{
+	font-size: 30px;
+	text-decoration: none;
+	color:#000;
+	padding-bottom: 3px;
+	text-align: left;
+}
+
+#page p {
+	font-size: 15px;
+}
+
+#page h2{
+	padding-bottom: 30px;
+}
+
+/* Showcase */
+
+#showcaseAbout{
+	margin-top: 50px;
+	background:url('../images/rom.jpeg') no-repeat center center;
+	border-bottom: 1px solid #7EA4CB;
+	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#showcaseAbout .row{
+	height: 400px;
+}
+
+#showcaseAbout h1{
+	font-size: 50px;
+	margin:0;
+}
+
+#showcaseAbout .showcase-content{
+	margin-top: 120px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
+}
+
+/* Showcase Claim */
+
+#showcaseClaim{
+	margin-top: 50px;
+	background:url('../images/showcaseClaim.jpg') no-repeat center center;
+	border-bottom: 1px solid #7EA4CB;
+	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#showcaseClaim .row{
+	height: 600px;
+}
+
+#showcaseClaim h1{
+	font-size: 50px;
+	margin:0;
+}
+
+
+#showcaseClaim .showcase-content{
+	margin-top: 150px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
+}
+
+
+/* Services Page CSS */
+
+/* Showcase */
+
+#showcaseServices{
+	margin-top: 50px;
+	background:url('../images/services.jpeg') no-repeat center center;
+	border-bottom: 1px solid #7EA4CB;
+	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#showcaseServices .row{
+	height: 400px;
+}
+
+#showcaseServices h1{
+	font-size: 50px;
+	margin:0;
+}
+
+
+#showcaseServices .showcase-content{
+	margin-top: 120px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
+}
+
+
+/* Contact Page CSS */
+
+#showcaseContact{
+	margin-top: 50px;
+	background:url('../images/contact.jpeg') no-repeat center center;
+	border-bottom: 1px solid #7EA4CB;
+	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#showcaseContact .row{
+	height: 400px;
+}
+
+#showcaseContact h1{
+	font-size: 50px;
+	margin:0;
+}
+
+
+#showcaseContact .showcase-content{
+	margin-top: 120px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
+}
+
+#subheader h3 {
+	padding-bottom: 20px;
+}
+
+
 @media(max-width:800px){
 	#showcase h1{
 		font-size: 30px;
+	}
+
+	#approach h4{
+		font-size: 1000px;
 	}
 }
 
@@ -265,6 +642,10 @@ img {
 	#showcase .showcase-content{
 		padding:40px 10px;
 	}
+}*/
+
+@media (max-width: 480px) and  (min-width: 360px) {
+
 }
 
 

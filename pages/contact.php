@@ -6,7 +6,7 @@
 <!-- Contact Page -->
 
 <!-- Backend PHP code for contact form -->
-<?php include "phpFiles/contactbackend.php"; ?>
+<?php include "contactbackend.php"; ?>
 <?php include "inc/header.php"; ?>
 
 <title>FIVE Studios | Contact</title>
@@ -27,7 +27,7 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href=".">Home</a></li>
+					<li><a href="index">Home</a></li>
 					<li><a href="about">About</a></li>
 
 					<li>
@@ -35,18 +35,9 @@
     				</button>
     				<ul class="dropdown-menu">
       					<li><a href="webdev">Design Approach</a></li>
-      					<li><a href="ourProcess">Our Process</a></li>
-      					<li><a href="pricing">Pricing</a></li>
-      					<li><a href="cloneSites">Clone Sites</a></li>
-    				</ul>
-					</li>
-
-					<li>
-   					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>APPS</a>
-    				</button>
-    				<ul class="dropdown-menu">
-      					<li><a href="webApps">Web Apps</a></li>
-      					<li><a href="iOS">iOS & Android</a></li>
+      					<li><a href="webdev">Our Process</a></li>
+      					<li><a href="webdev">Pricing</a></li>
+      					<li><a href="webdev">Clone Sites</a></li>
     				</ul>
 					</li>
 					<li class="current"><a href="contact">Contact</a></li>
@@ -75,15 +66,9 @@
 	<section id="subheader">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h2 style="font-weight:bold; text-align: left;"><span class="primary-text">FIVE</span> Studios</h2>
-					<h4 style="text-align: left;">Creating Online Experiences</h4>
-					<hr>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<h2>Questions? Call or email us today.</h2>
 					<h4>We’ll get right back to you.</h4>
-					<hr>
 				</div>
 			</div>
 		</div>
@@ -94,20 +79,7 @@
 	<section id="page" class="contact"> 
 		<div class="container">
 			<div class="row row-centered">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;">
-					<p>T: 416.523.3547</p>
-					<p><a href="mailto:info@fivestudios.ca?Subject=Lets%20Connect" target="_top" style="font-size: 15px;">E: info@fivestudios.ca</a></p>
-					<a href="https://twitter.com/thestudiosfive" target="_blank">
-							<i class="sm fa fa-twitter"></i>
-						</a>
-						<a href="https://www.instagram.com/studiosfive/?hl=en" target="_blank">
-							<i class="sm fa fa-instagram"></i>
-						</a>
-						<a href="https://www.facebook.com/FIVE-Studios-212285405980757/" target="_blank">
-							<i class="sm fa fa-facebook"></i>
-					</a>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left">
+				<div class="col-xs-12 col-xs-offset-3 col-sm-12 col-sm-offset-3 col-md-12 col-md-offset-3 col-lg-12 col-lg-offset-3 text-left">
 					<?php if($msg!= ""): ?>
 						<div class = "alert <?php echo $msgClass; ?>"><?php echo $msg; ?>
 						</div>
@@ -141,12 +113,34 @@
 		</div>
 	</section>
 
+	<!-- SUBHEADER -->
+	<section id="subheader">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h3>+1-416-523-3547 or <a href="mailto:corey@fivestudios.ca?Subject=Website%20Connection" style="color: black"; target="_top">corey@fivestudios.ca</a></h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- FOOTER --> 
 	<footer id="main-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p>&copy; 2017 FIVE Studios, All Rights Reserved</p>
+				</div>
+				<div class="col-md-12">
+					<a href="https://twitter.com/thestudiosfive" target="_blank">
+						<i class="sm fa fa-twitter"></i>
+					</a>
+					<a href="https://www.instagram.com/studiosfive/?hl=en" target="_blank">
+						<i class="sm fa fa-instagram"></i>
+					</a>
+					<a href="https://www.facebook.com/FIVE-Studios-212285405980757/" target="_blank">
+						<i class="sm fa fa-facebook"></i>
+					</a>
 				</div>
 			</div>
 		</div>

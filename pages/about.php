@@ -6,7 +6,7 @@
 <!-- About Page -->
 
 <!-- Header and Backend Include files -->
-<?php include "phpFiles/company.php"; ?>
+<?php include "company.php"; ?>
 <?php include "inc/header.php"; ?>
 
 <title>FIVE Studios | About</title>
@@ -29,26 +29,17 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href=".">Home</a></li>
+					<li><a href="index">Home</a></li>
 					<li class="current"><a href="about">About</a></li>
 
 					<li>
    					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>WEB</a>
     				</button>
     				<ul class="dropdown-menu">
-      					<li><a href="webdev">Design Approach</a></li>
-      					<li><a href="ourProcess">Our Process</a></li>
-      					<li><a href="pricing">Pricing</a></li>
-      					<li><a href="cloneSites">Clone Sites</a></li>
-    				</ul>
-					</li>
-
-					<li>
-   					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>APPS</a>
-    				</button>
-    				<ul class="dropdown-menu">
-      					<li><a href="webApps">Web Apps</a></li>
-      					<li><a href="iOS">iOS & Android</a></li>
+      					<li><a href="webdev.php">Design Approach</a></li>
+      					<li><a href="webdev.php">Our Process</a></li>
+      					<li><a href="webdev.php">Pricing</a></li>
+      					<li><a href="webdev.php">Clone Sites</a></li>
     				</ul>
 					</li>
 					<li><a href="contact">Contact</a></li>

@@ -27,7 +27,7 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="current"><a href=".">Home</a></li>
+					<li class="current"><a href="index">Home</a></li>
 					<li><a href="about">About</a></li>
 
 					<li>
@@ -35,18 +35,9 @@
     				</button>
     				<ul class="dropdown-menu">
       					<li><a href="webdev">Design Approach</a></li>
-      					<li><a href="ourProcess">Our Process</a></li>
-      					<li><a href="pricing">Pricing</a></li>
-      					<li><a href="cloneSites">Clone Sites</a></li>
-    				</ul>
-					</li>
-
-					<li>
-   					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>APPS</a>
-    				</button>
-    				<ul class="dropdown-menu">
-      					<li><a href="webApps">Web Apps</a></li>
-      					<li><a href="iOS">iOS & Android</a></li>
+      					<li><a href="webdev">Our Process</a></li>
+      					<li><a href="webdev">Pricing</a></li>
+      					<li><a href="webdev">Clone Sites</a></li>
     				</ul>
 					</li>
 					<li><a href="contact">Contact</a></li>
