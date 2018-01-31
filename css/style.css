@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 body{
 	margin-top:70px;
 	font-size: 16px;
@@ -20,14 +19,21 @@ img {
 }
 
 
+.second-navbar{
+  padding-top: 80px;
+}
+
+
 .navbar-default{
-	background: #fff;
-	border:0;
-	font-family: Poppins;
-	text-align: center;
 }
 
 .navbar-brand {
+	font-size:20px;
+	color:#000 !important;
+	font-weight:bold;
+}
+
+.navbar-fixed {
 	font-size:20px;
 	color:#000 !important;
 	font-weight:bold;
@@ -65,7 +71,6 @@ img {
 	text-transform: uppercase;
 }
 
-
 #navbar li{
 	display:inline;
 	padding-right:20px;
@@ -91,12 +96,17 @@ img {
 	padding-bottom: 3px;
 }
 
+/* This makes the navbar transparent */
+.navbar.transparent {
+   background: rgba(255,255,255,0.95);
+}
+
 
 /* Showcase */
 
 #showcase{
 	margin-top: 50px;
-	background:url('../images/showcase3.jpeg') no-repeat center center;
+	background:url('../images/homepage.jpeg') no-repeat center center;
 	border-bottom: 1px solid #7EA4CB;
 	margin-bottom: 30px;
 	background-size: cover;
@@ -529,6 +539,35 @@ img {
 	size: 20px;
 }
 
+/* App Dev */
+
+#appDev{
+	margin-top: 50px;
+	background:url('../images/spaceDesk.jpg') no-repeat center center;
+	border-bottom: 1px solid #7EA4CB;
+	margin-bottom: 30px;
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#appDev .row{
+	height: 400px;
+}
+
+#appDev h1{
+	font-size: 50px;
+	margin:0;
+}
+
+#appDev .showcase-content{
+	margin-top: 120px;
+	color: #fff;
+	border-radius: 50px;
+	padding: 20px;
+	text-align: center;
+	size: 20px;
+}
+
 /* Showcase Claim */
 
 #showcaseClaim{
@@ -565,7 +604,7 @@ img {
 /* Showcase */
 
 #showcaseServices{
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	background:url('../images/services.jpeg') no-repeat center center;
 	border-bottom: 1px solid #7EA4CB;
 	margin-bottom: 30px;
@@ -627,6 +666,17 @@ img {
 	padding-bottom: 20px;
 }
 
+#linkButtons {
+	padding: 30px;
+}
+#linkButtons button {
+	background-color: #7EA4CB;
+	border-color: #7EA4CB;
+}
+
+#linkButtons button:hover {
+	background: #62809E;
+}
 
 @media(max-width:800px){
 	#showcase h1{
