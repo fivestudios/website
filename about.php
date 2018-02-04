@@ -1,7 +1,20 @@
-<!-- FIVE Studios -->
-<!-- Website Template Design 2 -->
-<!-- By: Corey Ervin -->
-<!-- Mail: corey@fivestudios.ca -->
+ <!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+--> 
 
 <!-- About Page -->
 
@@ -69,16 +82,16 @@
 
 					<h2><span class="primary-text">Meet</span> The Team</h2>
 
-					<div class="box col-xs-12 col-sm-5 col-md-5 col-lg-5 center-xs">
+					<div class="box col-xs-5 col-sm-5 col-md-5 col-lg-5 center-xs">
 						<img src="./images/corey.jpg" style="width:100%">
 						<h3>Corey Ervin</h3>
 						<p>Director of Software Engineering</p>
 					</div>
 
-					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 center-xs">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs">
 					</div>
 
-					<div class="box col-xs-12 col-sm-5 col-md-5 col-lg-5 center-xs">
+					<div class="box col-xs-5 col-sm-5 col-md-5 col-lg-5 center-xs">
 						<img src="./images/coolbartek.jpg" style="width:100%">
 						<h3>Bartek Godzwon</h3>
 						<p>Director of Marketing & Business Development</p>

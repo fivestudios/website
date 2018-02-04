@@ -1,7 +1,20 @@
-<!-- FIVE Studios -->
-<!-- Website Template Design 2 -->
-<!-- By: Corey Ervin -->
-<!-- Mail: corey@fivestudios.ca -->
+<!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+--> 
 
 <!-- Include Files -->
 
@@ -21,12 +34,15 @@
 				<div class="col-sm-1 col-md-1">
 				</div>
 				<div class="col-sm-10 col-md-10 showcase-content">
-					<h1 href="" class="typewrite" data-period="1000" style= "color:#000; font-weight:bold; font-size: 60px;" data-type='["This is FIVE Studios.", "We Design.", "We Develop.", "We Create Online Experiences." ]'><span class="wrap"></span>
+					<h1 href="" class="typewrite" data-period="1000" data-type='["This is FIVE Studios.", "We Design.", "We Develop.", "We Create Online Experiences." ]'><span class="wrap"></span>
 					</h1>
 				</div>
 				<div class="col-sm-1 col-md-1">
 				</div>
 			</div>
+			<div class="fullscreen-video-wrap">
+				<video src="video/homepage.mp4" autoplay="true" loop="true" webkit-playsinline="true" playsinline="true"></video>
+			<div>
 		</div>
 	</section>
 
@@ -34,7 +50,7 @@
 	<section id="features">
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
 					<h2>Website Design</h2>
 					<p>What's included</p>
@@ -42,19 +58,19 @@
 					<!-- ICON ROW 1 -->
 
 					<div class="row center-xs center-sm center-md center-lg">
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-dashboard"></i><br>
 							<h4>Fully Optimized</h4>
 							<p>Superior Performance and Load Times</p>
 						</div>
 
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-question-circle-o"></i><br>
 							<h4>Free Support</h4>
 							<p>Expert Support Available Anytime</p>
 						</div>
 
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-rocket"></i><br>
 							<h4>Free Upgrades</h4>
 							<p>We'll Grow With You</p>
@@ -64,19 +80,19 @@
 					<!-- ICON ROW 2 -->
 
 					<div class="row center-xs center-sm center-md center-lg">
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-line-chart"></i><br>
 							<h4>UpTime Guarantee</h4>
 							<p>Guaranteed 99.9% uptime</p>
 						</div>
 
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-users"></i><br>
 							<h4>Social Media Integration</h4>
 							<p>Customer Success is Social</p>
 						</div>
 
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4">
 							<i class="fa fa-plug"></i><br>
 							<h4>Search Engine Optimization</h4>
 							<p>Let People Find You Faster</p>
@@ -93,7 +109,7 @@
 		<div class="container">
 			<div class="row">
 				
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12"">
 					<h2>Custom Web Applications</h2>
 					<ul>
 						<li><i class="fa fa-calendar"></i>  Available Spring 2018</li>
@@ -107,7 +123,7 @@
 	<section id="appdev">
 		<div class="container">
 			<div class="row center-xs center-sm center-md center-lg">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
 					<h2>Mobile Application Development</h2>
 					<p>Available Summer 2018</p>
@@ -115,12 +131,12 @@
 					<!-- ICON ROW 1 -->
 
 					<div class="row center-xs center-sm center-md center-lg">
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6">
 							<i class="fa fa-apple"></i><br>
 							<h4>iOS</h4>
 						</div>
 
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6">
 							<i class="fa fa-android"></i><br>
 							<h4>Android</h4>
 						</div>

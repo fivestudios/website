@@ -1,3 +1,21 @@
+<!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+-->
+
 <!DOCTYPE HTML> 
 <html>
 <html lang="en">
@@ -6,6 +24,13 @@
 
 <head>
 	<meta charset="UTF-8"/>
+
+	<!-- This line makes everything work on iphone --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- iOS styling detection for phone numbers: Turning feature off -->
+	<meta name="format-detection" content="telephone=no">
+	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 

@@ -18,14 +18,7 @@ img {
 	width:100%;
 }
 
-
-.second-navbar{
-  padding-top: 80px;
-}
-
-
-.navbar-default{
-}
+/***********************************************************/
 
 .navbar-brand {
 	font-size:20px;
@@ -71,10 +64,14 @@ img {
 	text-transform: uppercase;
 }
 
-#navbar li{
+#navbar li {
 	display:inline;
 	padding-right:20px;
 	list-style:none;
+}
+
+.navbar-nav li {
+        float: none;
 }
 
 #navbar ul{
@@ -96,42 +93,66 @@ img {
 	padding-bottom: 3px;
 }
 
+.dropdown-toggle {
+  border-color: #fff;
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
 /* This makes the navbar transparent */
 .navbar.transparent {
    background: rgba(255,255,255,0.95);
 }
 
-
 /* Showcase */
-
+/***********************************************************/
 #showcase{
 	margin-top: 50px;
-	background:url('../images/homepage.jpeg') no-repeat center center;
-	border-bottom: 1px solid #7EA4CB;
+	/*background:url('../images/homepage.jpeg') no-repeat center center;*/
 	margin-bottom: 30px;
-	background-size: cover;
 	opacity: 0.8;
+	overflow-x: hidden;
+	height: 100vh;
+	display:flex;
+	align-items: center;
 }
 
-#showcase .row{
-	height: 1000px;
-}
 
 #showcase h1{
-	font-size: 50px;
+	font-size: 60px;
 	margin:0;
+	font-weight: bold;
 }
 
 #showcase .showcase-content{
-	margin-top: 350px;
-	color: #fff;
+	margin-top: -130px;
+	color: #000;
 	border-radius: 50px;
 	padding: 20px;
 	text-align: center;
-	size: 20px;
+	font-size: 60px;
+	z-index: 131232131231;
 }
 
+.fullscreen-video-wrap {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.fullscreen-video-wrap video {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+
 /* Features */
+/***********************************************************/
+
 #features {
 	text-align: center;
 }
@@ -153,6 +174,8 @@ img {
 }
 
 /* Info */
+/***********************************************************/
+
 #info{
 	background:#333 url('../images/info-bg2.jpeg') no-repeat center center;
 	color:#fff;
@@ -184,6 +207,8 @@ img {
 }
 
 /* Web Apps section */
+/***********************************************************/
+
 #apps{
 	background:#333 url('../images/code.png') no-repeat center center;
 	color:#fff;
@@ -216,6 +241,8 @@ img {
 }
 
 /* App Dev */
+/***********************************************************/
+
 #appdev{
 	background:#333 url('../images/app.jpg') no-repeat center center;
 	color:#fff;
@@ -250,9 +277,9 @@ img {
 	color:56a79a;	
 }
 
-
-
 /* Company */
+/***********************************************************/
+
 #company {
 	background: #303233;
 	color:#DADCDD;
@@ -313,6 +340,7 @@ img {
 }
 
 /* Footer */
+/***********************************************************/
 
 #main-footer{
 	background: #7EA4CB;
@@ -342,6 +370,8 @@ img {
 }
 
 /* Page */
+/***********************************************************/
+
 #page {
 	margin-bottom:40px;
 	text-align: center;
@@ -366,6 +396,7 @@ img {
 	margin-bottom:20px !important;
 }
 /* Web Development */
+/***********************************************************/
 
 .services ul li {
 	list-style: none;
@@ -459,6 +490,8 @@ img {
 
 
 /* Contact */
+/***********************************************************/
+
 #contact form{
 	background: #303233;
 	color: #fff;
@@ -489,6 +522,7 @@ img {
 }
 
 /* About Page CSS */
+/***********************************************************/
 
 #subheader {
 	padding-top: 50px;
@@ -511,6 +545,7 @@ img {
 }
 
 /* Showcase */
+/***********************************************************/
 
 #showcaseAbout{
 	margin-top: 50px;
@@ -540,6 +575,7 @@ img {
 }
 
 /* App Dev */
+/***********************************************************/
 
 #appDev{
 	margin-top: 50px;
@@ -569,6 +605,7 @@ img {
 }
 
 /* Showcase Claim */
+/***********************************************************/
 
 #showcaseClaim{
 	margin-top: 50px;
@@ -600,12 +637,14 @@ img {
 
 
 /* Services Page CSS */
+/***********************************************************/
 
 /* Showcase */
+/***********************************************************/
 
 #showcaseServices{
-	/*margin-top: 50px;*/
-	background:url('../images/services.jpeg') no-repeat center center;
+	margin-top: 50px;
+	background:url('../images/type.jpeg') no-repeat center center;
 	border-bottom: 1px solid #7EA4CB;
 	margin-bottom: 30px;
 	background-size: cover;
@@ -624,7 +663,7 @@ img {
 
 #showcaseServices .showcase-content{
 	margin-top: 120px;
-	color: #fff;
+	color: #000;
 	border-radius: 50px;
 	padding: 20px;
 	text-align: center;
@@ -633,6 +672,8 @@ img {
 
 
 /* Contact Page CSS */
+/***********************************************************/
+
 
 #showcaseContact{
 	margin-top: 50px;
@@ -678,25 +719,77 @@ img {
 	background: #62809E;
 }
 
+/***********************************************************/
+/* Media 
+/***********************************************************/
+
+
 @media(max-width:800px){
 	#showcase h1{
-		font-size: 30px;
+		font-size: 30px !important;
 	}
 
-	#approach h4{
-		font-size: 1000px;
-	}
 }
 
 @media(max-width:500px){
-	#showcase .showcase-content{
+	.showcase-content, #showcaseAbout h1, #showcaseServices h1, #showcaseContact h1, #appDev h1 {
 		padding:40px 10px;
+		font-size: 30px;
 	}
-}*/
 
-@media (max-width: 480px) and  (min-width: 360px) {
+	#apps h2, #appdev h2, #appdev .fa, #page h2, #showcaseClaim h2 {
+		font-size: 20px;
+	}
+
+	#page h4 {
+		font-size: 17px;
+	}
+
+	#apps p, #appdev p, #apps .fa, #showcaseClaim h3, #page .box h3{
+		font-size: 15px;
+	}
+
+	#page .box p {
+		font-size: 10px;
+	}
+
+	#appdev h2 {
+		padding-top: 80px !important;
+	}
+
+	#company p {
+		font-size: 12px;
+	}
+
+	.typography h2, .colours h2, .consistency h2, .spacing h2, .imagery h2, .mobile-compatibility h2 {
+		font-size: 17px !important;
+	}
+
+	.typography h4, .colours h4, .consistency h4, .spacing h4, .imagery h4, .mobile-compatibility h4 {
+		font-size: 12px !important;
+	}
+
+	#subheader h2, #subheader h4 {
+		text-align: center;
+	}
+
+	#showcase {
+		margin-top: 50px;
+		background:url('../images/homepage.jpeg') no-repeat center center;
+		border-bottom: 1px solid #7EA4CB;
+		margin-bottom: 30px;
+		background-size: cover;
+		opacity: 0.8;
+	}
+
+	.fullscreen-video-wrap {
+		display: none;
+	}
 
 }
+
+}*/
+
 
 
 

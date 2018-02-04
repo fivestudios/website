@@ -1,3 +1,21 @@
+<!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+--> 
+
 <!-- Responsive Navbar from getbootstrap.com -->
 
 	<nav class="navbar navbar-default transparent navbar-fixed-top">
@@ -17,7 +35,7 @@
 					<li><a href="about">About</a></li>
 
 					<li>
-   					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>WEB</a>
+   					<button class="btn btn-link navbar-btn dropdown-toggle collapsed" type="button" data-toggle="dropdown"><a>WEB</a>
     				</button>
     				<ul class="dropdown-menu">
       					<li><a href="webdev">Design Approach</a></li>
@@ -26,9 +44,9 @@
       					<li><a href="cloneSites">Clone Sites</a></li>
     				</ul>
 					</li>
-
+					
 					<li>
-   					<button class="btn btn-link navbar-btn dropdown-toggle" type="button" data-toggle="dropdown"><a>APPS</a>
+   					<button class="btn btn-link navbar-btn dropdown-toggle collapsed" type="button" data-toggle="dropdown"><a>APPS</a>
     				</button>
     				<ul class="dropdown-menu">
       					<li><a href="webApps">Web Apps</a></li>

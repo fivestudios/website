@@ -1,7 +1,20 @@
-<!-- FIVE Studios -->
-<!-- Website Template Design 2 -->
-<!-- By: Corey Ervin -->
-<!-- Mail: corey@fivestudios.ca -->
+<!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+--> 
 
 <!-- Contact Page -->
 
@@ -22,7 +35,6 @@
 				</div>
 				<div class="col-sm-8 col-md-8 showcase-content">
 					<h1>Get More Information</span></h1>
-					<!--<p>It's Always 5 O'Clock Somewhere</p>-->
 				</div>
 				<div class="col-sm-2 col-md-2">
 				</div>
@@ -39,7 +51,7 @@
 					<h4 style="text-align: left;">Creating Online Experiences</h4>
 					<hr>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h2>Questions? Call or email us today.</h2>
 					<h4>We’ll get right back to you.</h4>
 					<hr>

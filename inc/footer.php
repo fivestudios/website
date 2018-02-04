@@ -1,3 +1,21 @@
+<!--
+ * Copyright © 2018 FIVE Studios
+ *
+ * See the LICENSE file at the top-level directory of this distribution
+ * for licensing information.
+ *
+ * Unless otherwise agreed in a custom licensing agreement with the FIVE Studios,
+ * no part of this software, including this file, may be copied, modified,
+ * propagated, or distributed except according to the terms contained in the
+ * LICENSE file.
+ *
+ * Removal or modification of this copyright notice is prohibited.
+ * 
+ * Questions: Contact Corey Ervin
+ * E: corey@fivestudios.ca
+ * 
+--> 
+
 <!-- COMPANY --> 
 	<section id="company">
 		<div class="container">
@@ -5,7 +23,8 @@
 				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 center-xs">
 					<h4 style="color:#fff;"><span class="primary-text">FIVE</span> Studios</h4>
 					<p>FIVE Studios is a software development firm based out of Toronto. We specialize in creating online experiences to bring customers closer to your product or service.</p>
-					<p>416 523 3547 | info@fivestudios.ca
+
+					<p>416-523-3547 | info@fivestudios.ca</p>
 				</div>
 
 				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 center-xs">
